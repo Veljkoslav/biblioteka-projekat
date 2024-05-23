@@ -1,19 +1,23 @@
 <html>
-	<head>
-		<title>Biblioteka</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="/kontrolniZadatak/design.css">
-	</head>
-	<body>
-		<h1>Biblioteka</h1>
-		<h3>Upis nove knjige</h3>
-		<form action="/kontrolniZadatak/obradaKnjige.php" method="POST">
-			Naziv: <input type="text" name="title"><br>			
-			Autor:<input type="text" name="author"><br>	
-			Godina:<input type="text" name="year"><br>
-			Vrsta:<input type="text" name="genre"><br>
-			<input type="submit" value="Dodaj"><br>
-		</form>
-		<p><a href="/kontrolniZadatak/index.html">Vrati se na prijavu.</a></p>
-	</body>
+
+<head>
+	<title>Biblioteka</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/kontrolniZadatak/design.css">
+</head>
+
+<body>
+	<h1>Biblioteka</h1>
+	<h3>Nova knjiga</h3>
+	<form action="/kontrolniZadatak/obradaKnjige.php" method="POST">
+		Naziv: <input type="text" name="naziv" required><br>
+		Autor:<input type="text" name="autor" required><br>
+		Godina:<input type="number" name="godiina" min="1000" max="9999" required><br>
+		Vrsta:<input type="text" name="vrsta" required><br>
+		Cena:<input type="text" name="cena" required><br>
+		<input type="submit" value="Dodaj"><br>
+	</form>
+	<p><a href="/kontrolniZadatak/prijava.php">Vrati se nazad.</a></p>
+</body>
+
 </html>

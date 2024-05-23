@@ -1,16 +1,19 @@
 <html>
-	<head>
-		<title>Biblioteka</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="/kontrolniZadatak/design.css">
-	</head>
-	<body>
-		<h1>Biblioteka</h1>
-		<h3>Prijavite se na nalog bibliotekara</h3>
-		<form action="/kontrolniZadatak/prijava.php" method="POST">
-			Korisničko ime: <input type="text" name="username"><br>			
-			Lozinka:<input type="password" name="password"><br>
-			<input type="submit" value="Prijava"><br>
-		</form>
-	</body>
+
+<head>
+	<title>Biblioteka</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/kontrolniZadatak/design.css">
+</head>
+
+<body>
+	<h1>Biblioteka</h1>
+	<h3>Prijavite se na vaš nalog</h3>
+	<form action="/kontrolniZadatak/prijava.php" method="POST">
+		Korisničko ime: <input type="text" name="korisnickoime" required><br>
+		Lozinka:<input type="password" name="lozinka" required><br>
+		<input type="submit" value="Prijava"><br>
+	</form>
+</body>
+
 </html>

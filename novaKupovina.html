@@ -1,0 +1,21 @@
+<html>
+
+<head>
+	<title>Biblioteka</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/kontrolniZadatak/design.css">
+</head>
+
+<body>
+	<h1>Biblioteka</h1>
+	<h3>Nova kupovina</h3>
+	<form action="/kontrolniZadatak/obradaKupovine.php" method="POST">
+		ID člana:<input type="text" name="clan" required><br>
+		ID knjige: <input type="text" name="knjiga" required><br>
+		Datum kupovine:<input type="date" name="datum" required><br>
+		<input type="submit" value="Dodaj"><br>
+	</form>
+	<p><a href="/kontrolniZadatak/prijava.php">Vrati se nazad.</a></p>
+</body>
+
+</html>
